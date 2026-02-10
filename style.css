@@ -1,0 +1,215 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+/* font-family: "Montserrat", sans-serif;
+font-family: "Unbounded", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 1rem 9%;
+    background-color: #004d4d;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 12px 0 #004d4d;
+}
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, rgba(51, 51, 51, 0) 0%, rgb(0 35 35) 100%);
+    z-index: -1;
+}
+
+.logo {
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin-left: 70px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+
+nav a {
+    font-family: "Unbounded", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-left: 5rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #7ee1ff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4;
+}
+
+section {
+    min-height: 100vh;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content span {
+    color: #349b9b;
+}
+.home-content {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-400px, 30px);
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content h3 {
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Unbounded", sans-serif;
+    text-shadow: 2px 2px 4px #004d4d;
+}
+.left-content h1 {
+    font-weight: bold;
+    font-size: 60px;
+    transform: translateY(-30px);
+    font-family: "Unbounded", sans-serif;
+}
+
+
+.right-content {
+    transform: translate(-250px, 170px);    
+}
+.right-content h3 {
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Unbounded", sans-serif;
+    margin-left: 1px;
+    text-shadow: 1px 1px 1px #004d4d;
+    letter-spacing: 3px;
+}
+.right-content h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 5px;
+    text-shadow: 2px 2px 4px #004d4d;
+    font-family: "Unbounded", sans-serif;
+}
+.right-content .alone {
+    margin-top: -38px;
+    margin-left: 2px;
+    text-shadow: none;
+}
+
+.home .home-img {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+.home .home-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-2 {
+    margin-top: 100px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid #077b7b;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    color: rgb(149, 188, 255);
+}
+.social-icons a:nth-child(5) {
+    margin-bottom: 13rem;
+}
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.2) translateY(-5px);
+    background-color: #7ee1ff;
+    box-shadow: 0 0 15px #7ee1ff;
+    border: 3px solid #7ee1ff;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    color: #7ee1ff;
+    font-weight: bold;
+    border: 2px solid #077b7b;
+    z-index: 2;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale3d(1.03);
+    transform: translateY(-5px);
+    background-color: #7ee1ff;
+    color: black;
+    box-shadow: 0 0 15px #7ee1ff;
+}
+
+
